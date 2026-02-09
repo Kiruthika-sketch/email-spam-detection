@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Email Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="email-bg">
+        <span>✉️</span>
+        <span>📧</span>
+        <span>📨</span>
+        <span>✉️</span>
+        <span>📩</span>
+        <span>📧</span>
+    </div>
+
+    <!-- Main Card -->
+    <div class="card">
+        <h1>📧 Spam Email Detection</h1>
+        <p class="subtitle">Check whether an email is safe or spam</p>
+
+        <form action="/predict" method="post">
+            <textarea name="message" placeholder="Paste email content here..." required></textarea>
+            <button type="submit">Analyze Email</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+

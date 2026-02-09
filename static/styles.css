@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #2757bd);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🌌 Animated Email Background */
+.email-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.email-bg span {
+    position: absolute;
+    display: block;
+    font-size: 28px;
+    animation: float 15s linear infinite;
+    opacity: 0.35;
+}
+
+.email-bg span:nth-child(1) { left: 10%; animation-duration: 12s; }
+.email-bg span:nth-child(2) { left: 25%; animation-duration: 18s; }
+.email-bg span:nth-child(3) { left: 40%; animation-duration: 14s; }
+.email-bg span:nth-child(4) { left: 60%; animation-duration: 20s; }
+.email-bg span:nth-child(5) { left: 75%; animation-duration: 16s; }
+.email-bg span:nth-child(6) { left: 90%; animation-duration: 22s; }
+
+@keyframes float {
+    0% {
+        top: 100%;
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        top: -10%;
+        transform: translateY(-100vh) rotate(360deg);
+    }
+}
+
+/* 💳 Main Card */
+.card {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 420px;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    resize: none;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: scale(1.03);
+}
+
+.result-gif {
+    width: 220px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.quote {
+    margin-top: 15px;
+    font-style: italic;
+    color: #444;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: #764ba2;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
